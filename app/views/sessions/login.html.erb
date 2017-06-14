@@ -1,0 +1,9 @@
+<h2>Login Page</h2>
+<%= form_tag ({controller: 'sessions', action: 'create', method: 'post'}) do %>
+  <%= text_field_tag 'name', 'Enter your Username'  %><br><br>
+  <%= label_tag 'password', 'Enter your password:' %><br>
+  <%= password_field_tag 'password' %><br><br>
+  <%= label_tag 'password_confirmation', 'Re-enter your password:' %><br>
+  <%= password_field_tag 'password_confirmation' %><br><br>
+  <input type=submit value='login'>
+<% end %>
